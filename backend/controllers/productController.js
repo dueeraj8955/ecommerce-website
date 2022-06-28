@@ -3,11 +3,11 @@ const Product = require("../models/productModel");
 
 // create Product --Admin
 exports.createProduct = async (req,res,next)=>{
-    const Product = await Product.create(req.body);
+    const product = await Product.create(req.body);
 
     res.status(201).json({
         sucess:true,
-        project
+        product
     })
 }
 
