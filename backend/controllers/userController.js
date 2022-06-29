@@ -19,4 +19,4 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) =>{
         success: true,
         user,
     });
-})
+});
