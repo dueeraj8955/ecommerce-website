@@ -172,3 +172,24 @@ exports.updatePassword = catchAsyncErrors(async (req, res, next) => {
   
     sendToken(user, 200, res);
   });
+
+  // update User Profile
+  exports.updateProfile = catchAsyncErrors(async (req, res, next) =>{
+    const newUserData = {
+        name: req.body.name,
+        email: req.body.email,
+      };
+
+      // we will add cloudinary later
+
+      const user = await User.findByIdAndUpdate(req.user.id, newUserData, {
+    new: true,
+    runValidators: true,
+    useFindAndModify: false,
+  });
+
+  res.status(200).json({
+    success: true,
+  });
+
+  });
