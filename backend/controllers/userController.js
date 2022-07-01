@@ -143,16 +143,17 @@ exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
 
 
   //Get User Details
-  exports.getUserDetails = catchAsyncErrors(async (req, res, next) => {
+exports.getUserDetails = catchAsyncErrors(async (req, res, next) => {
     const user = await User.findById(req.user.id);
   
     res.status(200).json({
-      success: true,
-      user,
+        success: true,
+        user,
     });
-  });
+});
 
-  // update User password
+
+// update User password
 exports.updatePassword = catchAsyncErrors(async (req, res, next) => {
     const user = await User.findById(req.user.id).select("+password");
   
@@ -221,6 +222,7 @@ exports.getSingleUser = catchAsyncErrors(async (req, res, next) => {
     });
 });
 
+
 // update User Role -- Admin
 exports.updateUserRole = catchAsyncErrors(async (req, res, next) => {
     const newUserData = {
@@ -239,6 +241,8 @@ exports.updateUserRole = catchAsyncErrors(async (req, res, next) => {
       success: true,
     });
 });
+
+
 // Delete User --Admin
 exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
     const user = await User.findById(req.params.id);
@@ -255,4 +259,4 @@ exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
       success: true,
       message: "User Deleted Successfully",
     });
-  });
+});
