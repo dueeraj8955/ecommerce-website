@@ -59,6 +59,15 @@ banner > a > button:hover {
   color: rgb(96, 46, 46);
 }
 
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
 .productCard {
   width: 15vmax;
   display: flex;
@@ -108,5 +117,12 @@ banner > a > button:hover {
   .productCard >div {
     margin: 0vmax;
     display: block;
+  }
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
   }
 }
