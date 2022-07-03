@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactNavbar } from "overlay-navbar";
-import logo from "../../images/logo.png";
+import logo from "../../../images/logo.png";
 import {FaSearch,FaCartPlus,FaUserAlt} from "react-icons/fa";
 
 
@@ -25,7 +25,7 @@ const options = {
   link2Url: "/products",
   link3Url: "/contact",
   link4Url: "/about",
-  link1Size: "1.3vmax",
+  link1Size: "1.5vmax",
   link1Color: "rgba(35, 35, 35,0.8)",
   nav1justifyContent: "flex-end",
   nav2justifyContent: "flex-end",
