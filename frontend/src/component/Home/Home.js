@@ -5,7 +5,7 @@ import "./Home.css";
 import MetsData from "../layout/MetaData.js";
 import {getProduct} from "../../actions/productAction";
 import {useSelector,useDispatch} from "react-redux";
-
+import Loader from "../layout/Loader/Loader.js";
 
 const Home = () => {
 
@@ -20,6 +20,7 @@ const Home = () => {
 
   return( 
     <Fragment>
+      {loading ? (<Loader/>):(<Fragment>
       <MetsData title="ECOMMERCE"/>
 
       <div className="banner">
@@ -38,6 +39,9 @@ const Home = () => {
               ))}
       </div>
 
+    </Fragment>
+    )
+    };
     </Fragment>
   )
 };
