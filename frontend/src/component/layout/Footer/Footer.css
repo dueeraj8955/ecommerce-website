@@ -1,7 +1,7 @@
 footer {
   margin-top: 10vmax;
   padding: 2vmax;
-  background-color: rgb(17, 38, 45);
+  background-color: rgb(34, 33, 33);
   color: white;
   display: flex;
   align-items: center;
@@ -32,13 +32,14 @@ footer {
 
 .midFooter {
   width: 60%;
+
   text-align: center;
 }
 
 .midFooter > h1 {
   font-size: 4vmax;
-  font-family: Georgia, serif;
-  color: #eb6e34;
+  font-family: "Roboto";
+  color: #eb4034;
 }
 .midFooter > p {
   max-width: 60%;
@@ -58,20 +59,20 @@ footer {
   font-size: 1.4vmax;
   text-decoration: underline;
 }
-.rightFooter > a> img {
-    width: 2vmax;
-    margin: 1vmax;
-    cursor: pointer
-}
 .rightFooter > a {
   text-decoration: none;
-  font-size: 1vmax;
+  font-size: 1.3vmax;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
   transition: all 0.5s;
   margin: 0.5vmax;
 }
-
+.githubfootericon{
+  color: rgb(18, 173, 244);
+}
+.linkedinfootericon{
+  color: white;
+}
 .rightFooter > a:hover {
-  color: #eb4034;
+  color: #2611a1;
 }
