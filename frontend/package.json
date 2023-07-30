@@ -22,12 +22,21 @@
     "react-chartjs-2": "^3.0.4",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+<<<<<<< HEAD
     "react-icons": "^3.11.0",
     "react-js-pagination": "^3.0.2",
     "react-material-ui-carousel": "^2.3.1",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
+=======
+    "react-icons": "^4.2.0",
+    "react-js-pagination": "^3.0.3",
+    "react-material-ui-carousel": "^2.3.1",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+>>>>>>> a3efe6c82cf3771c74bf4365c824284dc63d98ec
     "redux": "^4.1.1",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
@@ -58,8 +67,12 @@
       "last 1 safari version"
     ]
   },
+<<<<<<< HEAD
   "proxy": "http://192.168.43.207:5000",
   "devDependencies": {
     "webpack-dev-server": "4.14.0"
   }
+=======
+  "proxy": "http://192.168.43.207:5000"
+>>>>>>> a3efe6c82cf3771c74bf4365c824284dc63d98ec
 }
