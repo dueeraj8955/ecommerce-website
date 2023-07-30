@@ -9,11 +9,7 @@
     "dev": "nodemon backend/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
   },
-<<<<<<< HEAD
-  "author": "Dheeraj Kumar Maurya",
-=======
   "author": "",
->>>>>>> a3efe6c82cf3771c74bf4365c824284dc63d98ec
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
